@@ -1,0 +1,645 @@
+/* @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500); */
+body {
+    background-color: #f1e8e8;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 70px;
+    padding-top: 5px;
+    margin-top: 40px;
+
+}
+
+/* 
+.navbar .navbar-brand {
+    padding-top: 8px;
+  } */
+ 
+
+/* ---------------------------style for nav.html----------------------- */
+
+.navbar .navbar-brand img {
+    height: 40px;
+    width: 40px;
+}
+
+.dropdown-item:hover {
+    background-color: #b9b2b2;
+}
+
+.nav-item a:hover {
+
+    text-decoration: underline;
+    text-decoration-color: rgb(36, 197, 176);
+
+}
+
+.navbar-toggler {
+    float: right;
+    margin-top: 0;
+
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+
+}
+
+.dropdown-menu{
+background-color: #0fbdae;
+
+}
+
+/* -----------------------index.html---------------------- */
+/* .innerelement-carousel-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+} */
+
+.c-item{
+    height:900px;
+    /* display: block; */
+}
+.c-img{
+    height: 100%;
+    object-fit:cover;
+    filter:brightness(0.6);
+}
+
+#btn-carousel{
+    /* position: relative; */
+    /* left: 40%; */
+    /* top: -500px; */
+    color: white;
+    padding: 20px;
+    border-style: solid;
+    border-color: white;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* position: absolute; */
+    /* left: 0; */
+    /* right: 0; */
+    /* top: 480 px; */
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 400px; */
+    
+}
+#btn-carousel:hover{
+    background-color: white;
+    color: black;
+
+}
+
+#btn-explore{
+    
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#btn-explore:hover{
+    background-color:white
+}
+
+/* #btn-view-more:hover{
+    color: black;
+    background-color: white;
+} */
+#overtheimg {
+    position: relative;
+    top:-310px;
+    left: -40px;
+    padding: 50px;
+    
+}
+/* @media (min-width: 576px) { 
+    #overtheimg {
+        float:center;
+    }
+
+ } */
+
+.container-behindtheeasel{
+   width: 100%;
+    height: 700px; 
+    margin-top: -10rem;
+    position:relative;
+    max-width: 100vw;
+    
+    
+    
+}
+.bkgd-image{
+    background-image: url("https://media.istockphoto.com/id/1321486723/photo/japanese-man-spending-weekend-morning-painting-in-his-bedroom-at-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=JXw7o4Od_P7DTOUu3Q2ndsyyzjopOjRQl3kqm1Y2TbU=");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    filter:brightness(0.7);
+  }
+
+  .bkgd-image,
+.text-content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.text-content{
+    padding: 9em;
+    color: white;
+    /* box-sizing: border-box; */
+    text-align: center;
+    font-size: clamp(14px, 2vw, 24px);
+   
+  }
+ 
+#btn-visitmystudio{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
+}
+
+#btn-visitmystudio:hover{
+    color:black;
+    background-color: white;
+
+}
+
+#studio-stories img{
+    height: 300px;
+    width: 80px;
+
+}
+#socialmedia img{
+    width:250px;
+    height:270px ;
+}
+#socialmedia{
+    /* background-color: rgb(94, 84, 84); */
+    /* height: 500px; */
+    background-image: url('https://images.unsplash.com/photo-1632127258100-f8ae7c6c58c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vbmV0fGVufDB8fDB8fHww');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    max-height: 100%;
+    margin-bottom: 20px;
+}
+
+#galleryportfolio{
+    margin-top: 100px;
+
+}
+
+/*------------------- services section css---------------------- */
+/* .servicesText.card {
+    height: 280px;
+    cursor: pointer;
+}
+
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card:hover .servicesIcon {
+    color: #008000;
+}
+
+.servicesText:hover {
+    border: 1px solid #008000;
+} */
+
+/* @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500); */
+
+/* ---------------------- style for contact.html-------------------------- */
+.contact3 {
+    font-family: "Montserrat", sans-serif;
+    color: #8d97ad;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.contact3 h1,
+.contact3 h2,
+.contact3 h3,
+.contact3 h4,
+.contact3 h5,
+.contact3 h6 {
+    color: #3e4555;
+}
+
+.contact3 .font-weight-medium {
+    font-weight: 250px;
+}
+
+.contact3 .card-shadow {
+    -webkit-box-shadow: 0px 0px 30px rgba(85, 97, 122, 0.1);
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+    margin-left: 300px;
+
+}
+
+.contact3 .btn-danger-gradiant {
+    background: #ff4d7e;
+    background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+    background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+    background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+    background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+}
+
+.contact3 .btn-danger-gradiant:hover {
+    background: #ff6a5b;
+    background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
+    background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+    background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+    background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+}
+
+/* -----end of -----------------------style contact.html-------------------------- */
+.container-welcome {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.container-youtube {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.welcome-pic {
+    /* margin-left:100px; */
+    margin-right: 40px;
+}
+
+.introduce-myself img {
+    width: 70%;
+    height: 70%;
+
+
+}
+
+/* .nav-item:hover .dropdown-menu {
+    transform: scaleZ(1);
+    transition: 0.5s;
+    transform-origin: center;
+} */
+
+
+
+/* ---------------------    style for footer.html----------------------------- */
+.icons-social {
+    background-color: rgb(209, 177, 36);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+
+}
+
+.icons-social:hover {
+    background-color: rgb(141, 120, 26);
+
+
+}
+
+.moto {
+    color: #b9b2b2;
+}
+
+.trust {
+    color: rgba(189, 189, 52, 0.87);
+    font-style: italic;
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 60px 10px 10px;
+
+
+}
+
+/*----------------------------- end of style for footer --------------------------------- */
+
+.container-form {
+    margin-top: 200px;
+    margin-left: 200px;
+
+}
+
+/* --------------------style for meettheartist.html-------------------------------------- */
+.grid-meettheartist li {
+    margin-top:15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 25.3%;
+    float: left;
+}
+
+.img-meettheartist {
+    border: none;
+    /* display: inline-block; */
+    height: auto;
+    max-width: 100%;
+}
+
+#meet {
+    /* padding-top: 80px;
+    margin-left: 150px;
+    margin-right: 150px; */
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-size: large;
+    line-height: 2;
+
+}
+
+.image-hellothere {
+    
+    width: 95%;
+    height: 60%;
+    display: block;
+    
+    
+   
+}
+
+.hellothere-content{
+    padding: 13em;
+    color: white;
+   
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+  }
+  
+ 
+
+/* ----------------------------end of meettheartist.html------------------------------------ */
+
+
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+
+}
+
+article {
+    padding: 40px;
+}
+
+article img {
+    text-align: center;
+    box-shadow: 6px 6px 8px #777;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article p {
+    font-size: 16px;
+}
+
+.navbar-header {
+
+    width: 100%;
+    height: 40px;
+}
+
+/* .navbar-brand {
+    display: flex;
+    
+    position: relative;
+    
+} */
+
+.nav-item li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 30px;
+
+}
+
+ul .navbar-nav {
+    text-align: left;
+}
+
+.navbar-light {
+    width: 60%;
+    height: 40%;
+}
+
+.img-responsive {
+    max-width: 90%;
+    height: 50%;
+    padding: 60px 20px 20px 20px;
+    background-color: rgb(72, 136, 115);
+    text-align: center;
+}
+
+
+/* columns of same height styles */
+/* 
+.container-xs-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.row-xs-height {
+    display: table-row;
+}
+
+.col-xs-height {
+    display: table-cell;
+    float: none;
+} */
+
+.img-wrapper {
+    position: relative;
+    float: center;
+}
+
+.navbar-nav {
+    min-height: 110px;
+}
+
+/* .navbar-toggler {
+    display: inline-block;
+} */
+
+
+.product-card {
+    background-color: #612929;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* width: 350px;
+    height: 350px; */
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    /* height: 200px; */
+    object-fit: cover;
+    
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+.img {
+    position: relative;
+  }
+  
+  .img i {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    /* color: black; */
+  }
+
+  #youtubeborder{
+    border:3px solid rgb(189, 186, 28);
+  }
+
+  /* ipad */
+  /* @media screen and (max-width:992px){
+    .listProduct{
+        grid-template-columns:repeat(3,1fr);
+    }
+  } */
+
+  .image1 , .image2 , .image3 , .image4 , .image5{
+    width:500px;
+  }
+
+  #productImg{
+    width: 25rem;
+  }
+  .card{
+    width:25rem ;
+    height: 30rem;
+  }
+
+  .card .img-fit{
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .card-body{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+  @media (max-width:767.98){
+    .card .img-fit{
+        aspect-ratio: 1.45 / 1;
+    }
+  }
+
+  .card-container {
+    width: 90%;
+
+    margin: 3rem 3rem 3rem 3rem;
+    padding: auto auto;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: repeat(4, 300px);
+    gap: 2px;
+    /* padding: 20%; */
+    /* box-sizing: border-box; */
+}
+
+
+ 
+/*-----------------------shop style.css------------------ProductDetails1.html----------------------------- */
+.heading-top-op {
+    background-color: rgb(248, 241, 179);
+    width: 100%;
+    margin-top: 126px;
+    line-height: 1;
+}
+
+.btn-addtocart{
+
+    padding: 15px;
+    background-color:#f1e8e8;
+    border: 2 px solid black;
+}
+.btn-addtocart:hover{
+    background-color: black;
+    color: white;
+}
+  
+/*----------------------------------------------------- shoplist.html  => product-list.js---------------------------------------- */
+.view-details-btn {
+    background-color: #0fbdae;
+    border: 3px solid rgba(5, 71, 60, 0.781);
+    
+}
+
+.view-details-btn:hover{
+    background-color: #0a575a;
+    
+}
+.container-category{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    background-color:white ;
+    padding: 1 rem 0;
+    box-shadow: 1px 2px 10px black;
+}
+.container-category a{
+    text-decoration: none;
+    
+}
+
+.list{
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+/* -----------style ------evitaartsudio.html---------------- */
+.carouselstudio-img{
+    height: 600px;
+    object-fit: cover;
+}

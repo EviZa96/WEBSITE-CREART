@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "imgFile1": "images/products/Majestic Stag in the Wild 1.JPG",
+        "imgFile2": "images/products/Majestic Stag in the Wild 2.JPG",
+        "imgFile3": "images/products/Majestic Stag in the Wild 3.JPG",
+        "imgFile4": "images/products/Majestic Stag in the Wild 4.JPG",
+        "imgFile5": "images/products/Majestic Stag in the Wild 5.JPG",
+        "heading": "Majestic Stag in the Wild",
+        "body": "this is card body",
+        "price": 150,
+        "category":"all"
+    },
+    {
+        "id":2,
+        "imgFile1": "images/products/The Spring Brook 1.JPG",
+        "imgFile2": "images/products/The Spring Brook 2.JPG",
+        "imgFile3": "images/products/The Spring Brook 3.JPG",
+        "imgFile4": "images/products/The Spring Brook 4.JPG",
+        "imgFile5": "images/products/The Spring Brook 5.JPG",
+        "heading": "card 2",
+        "body": "The Spring Brook",
+        "price": 200,
+        "category":"landscapes"
+    },
+    {
+        "id":3,
+        "imgFile1": "images/products/Golden Hour Waves 1.jpg",
+        "imgFile2": "images/products/Golden Hour Waves 2.JPG",
+        "imgFile3": "images/products/Golden Hour Waves 3.JPG",
+        "imgFile4": "images/products/Golden Hour Waves 4.JPG",
+        "imgFile5": "images/products/Golden Hour Waves 5.JPG",
+        "heading": "Golden Hour Waves",
+        "body": "this is card body",
+        "price": 400,
+        "category":"seascapes"
+    },
+    {
+        "id":4,
+        "imgFile1": "images/products/Koules boat 1.JPG",
+        "imgFile2": "images/products/Koules boat 2.JPG",
+        "imgFile3": "images/products/Koules boat 3.JPG",
+        "imgFile4": "images/products/Koules boat 4.JPG",
+        "imgFile5": "images/products/Koules boat 5.JPG",
+        "heading": "Koule's boat",
+        "body": "this is card body",
+        "price": 300,
+        "category":"boats"
+    }
+]

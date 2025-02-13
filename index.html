@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ArtShop Original & Prints; Evita Zacharioudaki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+    <meta charset="utf-8">
+
+    <!-- cdn fontawesome -->
+    <script src="https://kit.fontawesome.com/ce111f8d46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+
+    <!-- vendor css files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="mystyle.css">
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <script>
+
+
+        let position_relative =
+            document.querySelectorAll('.position-relative');
+
+        position_relative.forEach(item => {
+            item.addEventListener('mouseover', event => {
+                const caption = item.querySelector('.position-absolute');
+                caption.classList.remove('d-none');
+            });
+            item.addEventListener('mouseleave', event => {
+                const caption = item.querySelector('.position-absolute');
+                caption.classList.add('d-none');
+            });
+        });
+    </script>
+
+
+    <!-- carousel  -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active c-item" data-bs-interval="1500">
+                        <img src="https://images.unsplash.com/photo-1520420097861-e4959843b682?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBhaW50aW5nJTIwY2FudmFzfGVufDB8fDB8fHww"
+                            class="d-block w-100 c-img" alt="slide 1">
+                        <div
+                            class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+                            <p class="mt-5 fs-3 text-uppercase">Welcome</p>
+                            <h1 class="display-1 fw-bolder text-capitalize">The Cre-Art</h1>
+                            <button type="button" id="btn-carousel" class="btn btn-default  px-7 py-2 fs-8 mt-5"
+                                data-bs-toggle="modal" data-bs-target="#booking-modal">VIEW FULL COLLECTION</button>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item" data-bs-interval="1500">
+                        <img src="https://plus.unsplash.com/premium_photo-1673514503009-912ffc6ff956?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGxhbmRzY2FwZSUyMHBhaW50aW5nfGVufDB8fDB8fHww"
+                            class="d-block w-100 c-img" alt="slide 2">
+                        <div
+                            class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+                            <p class="mt-5 fs-3 text-uppercase">Welcome</p>
+                            <h1 class="display-1 fw-bolder text-capitalize">DISCOVER MY COLLECTION</h1>
+                            <button type="button" id="btn-carousel" class="btn btn-default  px-7 py-2 fs-8 mt-5 ">VIEW
+                                FULL
+                                COLLECTION</button>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item" data-bs-interval="1500">
+                        <img src="https://plus.unsplash.com/premium_photo-1673470370451-6a60e9d93127?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFpbnRpbmclMjBicnVzaHxlbnwwfHwwfHx8MA%3D%3D"
+                            class="d-block w-100 c-img" alt="slide 3">
+                        <div
+                            class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+                            <p class="mt-5 fs-3 text-uppercase">An artworld different from the usual</p>
+                            <h1 class="display-1 fw-bolder text-capitalize">TRUST THE PROCESS OF CREATING</h1>
+                            <button type="button" id="btn-carousel" class="btn btn-default  px-7 py-2 fs-8 mt-5 ">VIEW
+                                FULL
+                                COLLECTION</button>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end of carousel -->
+
+   
+
+
+
+    <div class="container justify-content-center" style="margin-top: 50px;">
+        <p class="text-center">This collection is not just a series of paintings — it’s a glimpse into the untamed
+            landscapes and intimate
+            moments that speak of resilience, discovery, and the serenity we find in nature.</p>
+        <h3 class="text-center" style="margin-top: 40px;">Each piece is a window to the calm, inviting you to pause and
+            breathe deeply.</h3>
+        <h1 class="text-center" style="margin-top: 40px;">EXPERIENCE THE TRIPTYCH OF MARINE LIFE</h1>
+    </div>
+    <div class="container px-4" style="margin-top: 50px;">
+        <div class="row ">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="https://media.istockphoto.com/id/502426696/photo/beautiful-seascape.webp?a=1&b=1&s=612x612&w=0&k=20&c=ogFnp8AiUtFWg_XS4KyXaCKlIyfkipTdoe0RAfmXWvw="
+                        alt="one" class="img-fluid" style="width:100%">
+                    <div class="caption">
+                        <p>6x8" Oil Painting - ‘Colliding Horizons’
+                            <br> £120.00
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://media.istockphoto.com/id/524301691/photo/crimean-war-cape-aiya.webp?a=1&b=1&s=612x612&w=0&k=20&c=HVa1B5OWAIbZXkwSk2vhybcdYp1k9DQVH4XoM5uu6A0="
+                    alt="two" class="img-fluid" style="width:100%">
+                <div class="caption">
+                    <p>30x40" Oil Painting - ‘Momentary’
+                        <br> £150.00
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://media.istockphoto.com/id/1192160498/photo/watercolor-illustration-of-seascape-horizon-at-sunset.webp?a=1&b=1&s=612x612&w=0&k=20&c=pGfHVtDhjuoK6hWCTzP_34J__49H4x7QGAhDDMzmKac="
+                    alt="three" class="img-fluid" style="width:100%">
+                <div class="caption">
+                    <p>8x8" Acrylic Painting - ‘Morning Calm’
+                        <br> £180.00
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container " style="margin-top: 50px;">
+        <div class="row justify-content-md-center ">
+            <div class=" col-md-8 offset-md-4">
+                <img src="https://media.istockphoto.com/id/1277460281/photo/male-painter-at-art-studio-indoors-in-the-process-of-painting-pensive.webp?a=1&b=1&s=612x612&w=0&k=20&c=PhQjFpNLWO93XM98bgDRkLeyyCoOlM3s53WKvtrJWR0="
+                    alt="" class="img-fluid" style="width: 900px; height:500px;">
+            </div>
+
+            <div class="container" style="background-color: rgb(178, 192, 185); width: 600px; height:500px"
+                id="overtheimg">
+                <div class="row ">
+                    <div class="col">
+                        <h1 style="margin-top: 50px;">BRING THE SALTY SEA AIR INDOORS</h1>
+                        <p style="line-height: 30px;">My ocean collection “The Sea & it’s Rhythm” has been curated to
+                            bring the
+                            cleansing & serene
+                            qualities of the ocean to your space. Take a deep breath and relax into these subtle hues of
+                            blue.
+                        </p>
+                        <button type="button" id="btn-explore" class="btn btn-default">EXPLORE OCEANS</button>
+
+
+                    </div>
+                </div>
+                <!-- <h1 style="margin-top: 50px;">BRING THE SALTY SEA AIR INDOORS</h1>
+                <p style="line-height: 30px;">My ocean collection “The Sea & it’s Rhythm” has been curated to bring the
+                    cleansing & serene
+                    qualities of the ocean to your space. Take a deep breath and relax into these subtle hues of blue.
+                </p>
+                <button type="button" id="btn-explore" class="btn btn-default">EXPLORE OCEANS</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container-behindtheeasel d-flex align-items-center justify-content-center ">
+        <div class="bkgd-image"></div>
+        <div class="text-content">
+
+            <h2 class="fst-italic ms-1">Who's behind the easel</h2><br>
+            <h1>HI I'M EVITA</h1><br>
+            <h2 class="fst-italic">artist,Web & Graphic designer</h2><br>
+            <p class="lh-base">I enjoy creating dreamy impressionist paintings in oils and
+                acrylics. My art is deeply influenced by the beauty and serenity of nature, and my aim is to document
+                the way it makes me feel onto canvas. <br>I believe all of us are creative individuals and I’m
+                passionate about helping others gain confidence in painting. </p>
+            <button type="button" id="btn-visitmystudio" class="btn btn-default">VISIT MY STUDIO</button>
+        </div>
+    </div>
+
+    <div class="container" id="studio-stories">
+        <article>
+            <h1 class="text-center my-4 text-black">STUDIO STORIES</h1>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 row ">
+                <div class="col">
+                    <div class="position-relative gallery-item" style="cursor: pointer;">
+                        <img src="https://media.istockphoto.com/id/1139826864/photo/smiling-young-afro-woman-holding-color-palette-and-paintbrush.webp?a=1&b=1&s=612x612&w=0&k=20&c=3wK4C1oGAxcg3142PNLvmja6bccbaEb0kET8xHLn9Gc="
+                            alt="" class="w-100">
+                        <!-- <div class="position-absolute top-50 
+            start-50 translate-middle 
+            text-center d-none">
+                            <div class="bg-success bg-opacity-70
+                text-white px-4 py-2">
+                                HTML
+                            </div>
+                        </div> -->
+                    </div>
+
+                </div>
+
+                <div class="col">
+                    <img src="https://media.istockphoto.com/id/1139826864/photo/smiling-young-afro-woman-holding-color-palette-and-paintbrush.webp?a=1&b=1&s=612x612&w=0&k=20&c=3wK4C1oGAxcg3142PNLvmja6bccbaEb0kET8xHLn9Gc="
+                        alt="" class="w-100">
+                    <!-- <div class="position-absolute top-50 
+            start-50 translate-middle 
+            text-center d-none">
+                        <div class="bg-success bg-opacity-70
+                text-white px-4 py-2">
+                            HTML
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <div class="col">
+                    <img src="https://media.istockphoto.com/id/1139826864/photo/smiling-young-afro-woman-holding-color-palette-and-paintbrush.webp?a=1&b=1&s=612x612&w=0&k=20&c=3wK4C1oGAxcg3142PNLvmja6bccbaEb0kET8xHLn9Gc="
+                        alt="" class="w-100">
+                    <!-- <div class="position-absolute top-50 
+            start-50 translate-middle 
+            text-center d-none">
+                        <div class="bg-success bg-opacity-70
+                text-white px-4 py-2">
+                            HTML
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <div class="col">
+                    <img src="https://media.istockphoto.com/id/1139826864/photo/smiling-young-afro-woman-holding-color-palette-and-paintbrush.webp?a=1&b=1&s=612x612&w=0&k=20&c=3wK4C1oGAxcg3142PNLvmja6bccbaEb0kET8xHLn9Gc="
+                        alt="" class="w-100">
+                    <!-- <div class="position-absolute top-50 
+            start-50 translate-middle 
+            text-center d-none">
+                        <div class="bg-success bg-opacity-70
+                text-white px-4 py-2">
+                            HTML
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <div class="col">
+                    <img src="https://media.istockphoto.com/id/1139826864/photo/smiling-young-afro-woman-holding-color-palette-and-paintbrush.webp?a=1&b=1&s=612x612&w=0&k=20&c=3wK4C1oGAxcg3142PNLvmja6bccbaEb0kET8xHLn9Gc="
+                        alt="" class="w-100">
+                    <!-- <div class="position-absolute top-50 
+            start-50 translate-middle 
+            text-center d-none">
+                        <div class="bg-success bg-opacity-70
+                text-white px-4 py-2">
+                            HTML
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <div class="col">
+                    <img src="https://media.istockphoto.com/id/1139826864/photo/smiling-young-afro-woman-holding-color-palette-and-paintbrush.webp?a=1&b=1&s=612x612&w=0&k=20&c=3wK4C1oGAxcg3142PNLvmja6bccbaEb0kET8xHLn9Gc="
+                        alt="" class="w-100">
+                    <!-- <div class="position-absolute top-50 
+            start-50 translate-middle 
+            text-center d-none">
+                        <div class="bg-success bg-opacity-70
+                text-white px-4 py-2">
+                            HTML
+                        </div>
+                    </div> -->
+
+                </div>
+                <div class="col">
+                    <img src="https://media.istockphoto.com/id/1139826864/photo/smiling-young-afro-woman-holding-color-palette-and-paintbrush.webp?a=1&b=1&s=612x612&w=0&k=20&c=3wK4C1oGAxcg3142PNLvmja6bccbaEb0kET8xHLn9Gc="
+                        alt="" class="w-100">
+                    <!-- <div class="position-absolute top-50 
+            start-50 translate-middle 
+            text-center d-none">
+                        <div class="bg-success bg-opacity-70
+                text-white px-4 py-2">
+                            HTML
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <div class="col">
+                    <img src="https://media.istockphoto.com/id/1139826864/photo/smiling-young-afro-woman-holding-color-palette-and-paintbrush.webp?a=1&b=1&s=612x612&w=0&k=20&c=3wK4C1oGAxcg3142PNLvmja6bccbaEb0kET8xHLn9Gc="
+                        alt="" class="w-100">
+                    <!-- <div class="position-absolute top-50 
+            start-50 translate-middle 
+            text-center d-none">
+                        <div class="bg-success bg-opacity-70
+                text-white px-4 py-2">
+                            HTML
+                        </div>
+                    </div> -->
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+
+
+
+
+    <!-- welcome container -->
+
+    <div class="container-welcome">
+
+        <div class="row justify-content-center">
+
+            <div class="col-4">
+                <h1 style="margin-bottom: 40px;">Welcome to my Art Studio</h1>
+                <p>This is my online bussiness store with the name "The Cre-Art".The history behind of this ,is the
+                    combination of two words "Create" and "Art".Creating art was always my passion and with a
+                    magical way, a
+                    safe place where I was feeling inspired and good of myself!!Selling online handmade products
+                    with full
+                    of love offering satisfaction and happiness each one of you!!
+                </p>
+                <h2></h2>
+            </div>
+            <div class="col-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJigcdmEAUqY-2CAZn9_zzRMcU0jiEX4CBhg&s"
+                    alt="welcome-art-studio" class="welcome-pic">
+            </div>
+        </div>
+
+    </div>
+    <!-- end welcome container -->
+
+    <!-- services section-->
+    <!-- <section id="services">
+        <div class="container">
+            <h1 class="text-center">Services</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mt-3">Web Development</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and
+                                make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Website Design</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and
+                                make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">Illustrator</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and
+                                make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-search'></i>
+                            <h4 class="card-title mt-3">SEO</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and
+                                make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3">Oil-Acrylic Painter</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and
+                                make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3">QA</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and
+                                make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+    <!-- <div class="row align-items-center container-youtube">
+        <h1 style="text-align:center">Watch content on my channel</h1>
+        <h4 style="text-align: center;">#connect to my artworld</h4>
+        <div class="col embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" width="560" height="315"
+                src="https://www.youtube.com/embed/fntbKyA-iNQ?si=bK1qWzUeU6MrLJ37" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col embed-responsive embed-responsive-21by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fWMxsYczvXg?si=sj0xMpuAQNsBwV0S"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col embed-responsive embed-responsive-21by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uE7Sm8b8H6o?si=f-KhM1fiS7EHHv-_"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div> -->
+
+
+    <div class="container-fluid" id="socialmedia">
+
+        <h1 class="text-center text-white">Watch my channel on Youtube</h1>
+        <h3 class="text-center text-white">#tutorials</h3>
+        <div class="container" id="gallery-item-socialmedia">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 ">
+                <div class="col-sm-6" id="youtubeborder">
+                    <div class=" bg-image hover-overlay shadow-1-strong rounded " data-mdb-ripple-init
+                        data-mdb-ripple-color="light" style="cursor: pointer;">
+
+                        <a href="https://youtu.be/pu7_hIhkAIM?si=MZEmKl55ZJPdpowN" target="_blank" class="thumbnail">
+                            <div class="img">
+                                <i class="fa fa-play-circle-o fa-4x" style="color:rgb(255, 255, 255)"></i>
+                                <img src="./images/thumbnails/thumbnail-Trust your instict.png" alt="" class="w-100" />
+                            </div>
+                            <div class="mask" style="background-color: hsla(0, 11%, 87%, 0.2)"></div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6" id="youtubeborder">
+                    <div class="position-relative gallery-item" style="cursor: pointer;">
+                        <a href="https://youtu.be/fWMxsYczvXg?si=J0X50eZLhYXj8DOp" target="_blank" class="thumbnail">
+                            <div class="img">
+                                <i class="fa fa-play-circle-o fa-4x" style="color:rgb(255, 255, 255)"></i>
+                                <img src="./images/thumbnails/thumbnail -youtube ups&downs.png" alt="" class="w-100" />
+                            </div>
+                            <div class="mask" style="background-color: hsla(0, 11%, 87%, 0.2)"></div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-6" id="youtubeborder">
+                    <div class="position-relative gallery-item" style="cursor: pointer;">
+                        <a href="https://youtu.be/fntbKyA-iNQ?si=NxT9F-AK3hXUNxoA" target="_blank" class="thumbnail">
+                            <div class="img">
+                                <i class="fa fa-play-circle-o fa-4x" style="color:rgb(255, 255, 255)"></i>
+                                <img src="./images/thumbnails/thumbnail youtube GIFT.png" alt="" class="w-100" />
+                            </div>
+                            <div class="mask" style="background-color: hsla(0, 11%, 87%, 0.2)"></div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-sm-6" id="youtubeborder">
+                    <div class="position-relative gallery-item" style="cursor: pointer;">
+                        <a href="https://youtu.be/uE7Sm8b8H6o?si=iIbITtZURG4SllBv" target="_blank" class="thumbnail">
+                            <div class="img">
+                                <i class="fa fa-play-circle-o fa-4x" style="color:rgb(255, 255, 255)"></i>
+                                <img src="./images/thumbnails/thumbnail youtube tutorial.png" alt="" class="w-100" />
+                            </div>
+                            <div class="mask" style="background-color: hsla(0, 11%, 87%, 0.2)"></div>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <br><br><br>
+        </div>
+    </div>
+
+
+</body>
+
+<!--footer -->
+<div id="footer-placeholder">
+
+</div>
+
+<script>
+    $(function () {
+        $("#footer-placeholder").load("footer.html");
+    });
+</script>
+
+
+
+</html>
