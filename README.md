@@ -9,11 +9,12 @@ Step 0 - open cmd and change the current working directory to your project locat
 2) git status (for checking status)
 
 3) git add . (add all the change file (.))
+git add <filename>(if specific file) or git add <filename1> <filename2> <filenameN> (if specific but more than one files) 
 
-4) git commit -m "<pass your comment>"
+5) git commit -m "<pass your comment>"
 
-5) git remote add origin "<pass your project clone url>"
+6) git remote add origin "<pass your project clone url>"
 
-6) git pull --allow-unrelated-histories "<pass your project clone url>" master
+7) git pull --allow-unrelated-histories "<pass your project clone url>" master
 
-7) git push -u "<pass your project clone url>" master
+8) git push -u "<pass your project clone url>" master
