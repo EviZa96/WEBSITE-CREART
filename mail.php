@@ -51,12 +51,12 @@ $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->SMTPAuth = true;
 
-$mail->Host = "smtp.example.com";
+$mail->Host = "smtp.thecreartstore.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
-$mail->Username = "you@example.com";
-$mail->Password = "password";
+$mail->Username = "paintingsbyevita158@gmail.com";
+$mail->Password = "DolphEvi@.96";
 
 $mail->setFrom($email, $name);
 $mail->addAddress("zacharioudakievitatechn96@hmail.com", "evita");
