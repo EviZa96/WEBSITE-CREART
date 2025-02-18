@@ -1,10 +1,12 @@
 <?php
 
+
 $name = $_POST['fulname'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
+/*
 $mailheader = "From:".$name."<".$email.">\r\n";
 
 $recipient = "zaxarioudakievita157@gmail.com";
@@ -35,6 +37,36 @@ echo'
 
 
 ';
+
+*/
+require "vendor/autoload.php";
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+$mail = new PHPMailer(true);
+
+// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+
+$mail->Host = "smtp.example.com";
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = 587;
+
+$mail->Username = "you@example.com";
+$mail->Password = "password";
+
+$mail->setFrom($email, $name);
+$mail->addAddress("zacharioudakievitatechn96@hmail.com", "evita");
+
+$mail->Subject = $subject;
+$mail->Body = $message;
+
+$mail->send();
+
+header("Location: sent.html");
 
 
 ?>
