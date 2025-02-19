@@ -124,6 +124,12 @@
             detail.querySelector('.price').innerText = '$' + thisProduct.price;
             detail.querySelector('.description').innerText = thisProduct.body;
 
+             // Add click event to the button
+            let buttonaddtocart = detail.querySelector('.btn-addtocart');
+            buttonaddtocart.addEventListener('click', () => {
+                window.location.href = thisProduct.url; // Redirect to the product URL
+            });
+
         }
     </script>
 </body>

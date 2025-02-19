@@ -9,7 +9,8 @@ let cardData = [
         heading: 'Majestic Stag in the Wild',
         body: 'this is card body',
         price: 150,
-        category: 'all'
+        category: 'all',
+        url:''
 
 
     },
