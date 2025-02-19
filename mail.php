@@ -51,7 +51,7 @@ $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->SMTPAuth = true;
 
-$mail->Host = "smtp.thecreartstore.com";
+$mail->Host = "smtp.gmail.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
@@ -59,9 +59,9 @@ $mail->Username = "paintingsbyevita158@gmail.com";
 $mail->Password = "DolphEvi@.96";
 
 $mail->setFrom($email, $name);
-$mail->addAddress("zacharioudakievitatechn96@hmail.com", "evita");
+$mail->addAddress("paintingsbyevita158@gmail.com", "evita");
 
-$mail->Subject = $subject;
+// $mail->Subject = $subject;
 $mail->Body = $message;
 
 $mail->send();
