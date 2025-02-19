@@ -1,5 +1,8 @@
 <?php
 
+header("Access-Control-Allow-Origin: thecreartstore.com"); // Adjust '*' to your domain if needed
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+header("Content-Type: application/json");
 
 $name = $_POST['fulname'];
 $email = $_POST['email'];
@@ -56,7 +59,7 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
 $mail->Username = "paintingsbyevita158@gmail.com";
-$mail->Password = "DolphEvi@.96";
+$mail->Password = "yourpassword";
 
 $mail->setFrom($email, $name);
 $mail->addAddress("paintingsbyevita158@gmail.com", "evita");
