@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category List</title>
+  <style>
+    /* General styles for the category list */
+    .category-list {
+      font-family: 'Arial', sans-serif; /* Default font */
+      font-size: 1.2rem; /* Adjust size */
+      font-weight: 500; /* Medium weight */
+      list-style: none; /* Remove bullets */
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Styling individual categories */
+    .category-list li {
+      padding: 0.5rem;
+      color: #333; /* Text color */
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    /* Hover effect */
+    .category-list li:hover {
+      color: #007bff; /* Change color on hover */
+      font-weight: bold; /* Make bold on hover */
+    }
+
+    /* Active category */
+    .category-list li.active {
+      color: #fff; /* White text */
+      background-color: #007bff; /* Blue background */
+      border-radius: 4px; /* Rounded corners */
+      padding: 0.5rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <ul class="category-list">
+    <li class="active">All Categories</li>
+    <li>Electronics</li>
+    <li>Fashion</li>
+    <li>Home & Kitchen</li>
+    <li>Books</li>
+  </ul>
+</body>
+</html>

@@ -636,7 +636,18 @@ header{
 .list{
     list-style-type: none;
     margin-left: 20px;
+   
 }
+.list a:hover{
+ color: #4c6566;
+ font-weight: bold; /* Make bold on hover */
+}
+
+.container-category a{
+    color: #333;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    font-size: 20px;
+} 
 
 /* -----------style ------evitaartsudio.html---------------- */
 .carouselstudio-img{
