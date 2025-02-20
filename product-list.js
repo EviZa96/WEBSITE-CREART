@@ -6,9 +6,9 @@ let cardData = [
         imgFile3: 'images/products/Majestic Stag in the Wild 3.JPG',
         imgFile4: 'images/products/Majestic Stag in the Wild 4.JPG',
         imgFile5: 'images/products/Majestic Stag in the Wild 5.JPG',
-        heading: 'Majestic Stag in the Wild',
-        body: 'this is card body',
-        price: 150,
+        heading: "Original Deer Oil Painting 'Majestic Stag In The Wild'| 30X25 on Canvas board",
+        body: "Capture the untamed beauty of nature with this striking hand-painted depiction of a stag standing proudly amidst lush greenery. The vibrant green background and bold brushstrokes bring a sense of vitality and movement to the piece, while the stag's majestic antlers command attention. Perfect for nature enthusiasts or anyone looking to add a touch of wilderness to their space, this original artwork conveys a serene and powerful connection to the outdoors. Signed by the artist, this one-of-a-kind painting makes an excellent addition to your art collection or a thoughtful gift for animal lovers.",
+        price: 70,
         category: 'all',
         url:''
 
@@ -21,9 +21,9 @@ let cardData = [
         imgFile3: 'images/products/The Spring Brook 3.JPG',
         imgFile4: 'images/products/The Spring Brook 4.JPG',
         imgFile5: 'images/products/The Spring Brook 5.JPG',
-        heading: 'The Spring Brook',
-        body: 'this is card body',
-        price: 200,
+        heading: '"The Spring Brook" Original Oil Painting | 20x20cm On Canvas',
+        body: 'Bring the beauty of nature indoors with this stunning original painting of a serene river landscape. Capturing a tranquil stream winding through lush greenery, this piece showcases vibrant shades of green, yellow, and blue in a lively impressionistic style. Textured brushstrokes create a sense of movement in the water and depth in the foliage, evoking the peaceful ambiance of a walk by the riverside.',
+        price: 50,
         category: 'landscapes'
 
     },
@@ -34,9 +34,9 @@ let cardData = [
         imgFile3: 'images/products/Golden Hour Waves 3.JPG',
         imgFile4: 'images/products/Golden Hour Waves 4.JPG',
         imgFile5: 'images/products/Golden Hour Waves 5.JPG',
-        heading: 'Golden Hour Waves',
-        body: 'this is card body',
-        price: 400,
+        heading: '"Golden Hour Waves" Original Acrylic Painting | 20x20cm On Canvas ',
+        body: 'Bring the serene beauty of a beach sunset into your space with this original hand-painted canvas. This piece captures a stunning seaside scene bathed in warm golden light, with gentle waves rolling onto the shore and an expansive sunset casting vibrant orange and yellow hues across the sky. The delicate texture of the water and sandy shore adds depth, creating an immersive experience that brings the peaceful, rejuvenating atmosphere of the ocean to any room. Perfect for beach lovers and art enthusiasts alike, this unique artwork makes a calming yet captivating addition to your decor.',
+        price: 50,
         category: 'seascapes'
 
     },
@@ -47,9 +47,9 @@ let cardData = [
         imgFile3: 'images/products/Koules boat 3.JPG',
         imgFile4: 'images/products/Koules boat 4.JPG',
         imgFile5: 'images/products/Koules boat 5.JPG',
-        heading: 'Koules boat',
-        body: 'this is card body',
-        price: 300,
+        heading:"'Traditional boat in Koule's port Original Oil Painting| 20x20cm On Canvas board",
+        body: "This captivating acrylic painting depicts a classic Greek fishing boat gently gliding on the shimmering turquoise waters, set against the backdrop of a historic harbor wall. The intricate details of the aged stone fortress, paired with the vibrant blues of the boat and sea, evoke the charm of Mediterranean coastal life.The lively brushstrokes capture the motion of the water and the timeless beauty of the scene, making it a perfect piece for lovers of nautical themes and travel-inspired art. Hand-painted on durable canvas, this artwork is an original creation, signed by the artist, and ready to enhance any space with its sunny, maritime ambiance.",
+        price: 60,
         category: 'boats'
 
     },
