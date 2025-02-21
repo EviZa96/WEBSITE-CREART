@@ -85,8 +85,6 @@ const createCard = () => {
         // card.classList.add('col-md-4', 'mb-4');
         card.setAttribute('data-product-id', data.id);
 
-        console.log("--------------------mpike");
-
         // Add content inside the product card
         let content = `<div class="col">
                         <div class="card">
