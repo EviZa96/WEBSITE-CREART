@@ -54,6 +54,19 @@ let cardData = [
         category: 'boats'
 
     },
+    {
+        id: 5,
+        imgFile1: 'images/products/tranquilwaters 1.JPG',
+        imgFile2: 'images/products/tranquilwaters 2.JPG',
+        imgFile3: 'images/products/tranquilwaters 3.JPG',
+        imgFile4: 'images/products/tranquilwaters 4.JPG',
+        imgFile5: 'images/products/tranquilwaters 5.JPG',
+        heading:"'Tranquil Waters: Anchored by the Shore'| 30x20cm On Canvas board",
+        body: "Escape to a serene coastal getaway with this vibrant hand-painted artwork. Featuring a small boat gently anchored in calm turquoise waters, the painting evokes a sense of peace and simplicity. The background showcases a lush shoreline under a clear blue sky, completing the idyllic scene. This piece is perfect for enhancing any space with its calming and summery vibe. Signed by the artist, it’s an original work that brings the beauty of the seaside into your home.",
+        price: 55,
+        category: 'boats'
+    },
+
 ];
 
 // const cardContainer = document.querySelector('.card-container');
@@ -137,14 +150,6 @@ createCard(cardData);
 const cardContainer = document.querySelector(".card-container");
 const lists = document.querySelectorAll(".list");
 
-// Event delegation for list items
-// categoryList.addEventListener("click", (event) => {
-//     if (event.target.tagName === "LI") {
-//         const category = event.target.dataset.category;
-//         displayCards(category);
-//     }
-// });
-
 
 // Function to display products as cards
 function displayCards(filteredProducts) {
@@ -158,11 +163,10 @@ function displayCards(filteredProducts) {
         return;
     }
 
-     // Get products for the selected category
-     let products = cardData[filteredProducts] || [];
+    
      console.log("products for the selected category"+products);
 
-    products.forEach(item => {
+    filteredProducts.forEach(item => {
         const card = document.createElement("div");
         // card.classList.add("card");
         card.innerHTML = `<div class="col">
