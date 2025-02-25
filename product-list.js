@@ -38,7 +38,7 @@ let cardData = [
         body: 'Bring the serene beauty of a beach sunset into your space with this original hand-painted canvas. This piece captures a stunning seaside scene bathed in warm golden light, with gentle waves rolling onto the shore and an expansive sunset casting vibrant orange and yellow hues across the sky. The delicate texture of the water and sandy shore adds depth, creating an immersive experience that brings the peaceful, rejuvenating atmosphere of the ocean to any room. Perfect for beach lovers and art enthusiasts alike, this unique artwork makes a calming yet captivating addition to your decor.',
         price: 50,
         category: 'seascapes',
-        url:'https://buy.stripe.com/test_5kA3dh5JHemKgEg9AA'
+        url:'https://buy.stripe.com/bIY5km2Y91bpaxG5kk'
 
     },
     {
