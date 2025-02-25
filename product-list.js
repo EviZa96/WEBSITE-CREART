@@ -108,7 +108,7 @@ const createCard = () => {
                                         <h5 class="card-title mb-3 fw-bold  ">${data.heading}</h5>
                                         
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="product-price fw-bold">$${data.price}</span>
+                                            <span class="product-price fw-bold">${data.price} €</span>
                                             <button class="view-details-btn text-white px-4 py-2 rounded-pill" data-product-id="${data.id}"">View Details</button>
                                         </div>
                                    
