@@ -9,7 +9,7 @@ let cardData = [
         heading: "Original Deer Oil Painting 'Majestic Stag In The Wild'| 30X25 on Canvas board",
         body: "Capture the untamed beauty of nature with this striking hand-painted depiction of a stag standing proudly amidst lush greenery. The vibrant green background and bold brushstrokes bring a sense of vitality and movement to the piece, while the stag's majestic antlers command attention. Perfect for nature enthusiasts or anyone looking to add a touch of wilderness to their space, this original artwork conveys a serene and powerful connection to the outdoors. Signed by the artist, this one-of-a-kind painting makes an excellent addition to your art collection or a thoughtful gift for animal lovers.",
         price: 70,
-        category: 'all',
+        category: 'animals',
         url:''
 
 
@@ -37,7 +37,8 @@ let cardData = [
         heading: '"Golden Hour Waves" Original Acrylic Painting | 20x20cm On Canvas ',
         body: 'Bring the serene beauty of a beach sunset into your space with this original hand-painted canvas. This piece captures a stunning seaside scene bathed in warm golden light, with gentle waves rolling onto the shore and an expansive sunset casting vibrant orange and yellow hues across the sky. The delicate texture of the water and sandy shore adds depth, creating an immersive experience that brings the peaceful, rejuvenating atmosphere of the ocean to any room. Perfect for beach lovers and art enthusiasts alike, this unique artwork makes a calming yet captivating addition to your decor.',
         price: 50,
-        category: 'seascapes'
+        category: 'seascapes',
+        url:'https://buy.stripe.com/test_5kA3dh5JHemKgEg9AA'
 
     },
     {
@@ -132,17 +133,17 @@ const createCard = () => {
 createCard(cardData);
 
 // -----------display products when click the category--------------------------------------------------
-const categoryList = document.getElementById("category-list");
+
 const cardContainer = document.querySelector(".card-container");
 const lists = document.querySelectorAll(".list");
 
 // Event delegation for list items
-categoryList.addEventListener("click", (event) => {
-    if (event.target.tagName === "LI") {
-        const category = event.target.dataset.category;
-        displayCards(category);
-    }
-});
+// categoryList.addEventListener("click", (event) => {
+//     if (event.target.tagName === "LI") {
+//         const category = event.target.dataset.category;
+//         displayCards(category);
+//     }
+// });
 
 
 // Function to display products as cards
@@ -157,8 +158,11 @@ function displayCards(filteredProducts) {
         return;
     }
 
+     // Get products for the selected category
+     let products = cardData[filteredProducts] || [];
+     console.log("products for the selected category"+products);
 
-    filteredProducts.forEach(item => {
+    products.forEach(item => {
         const card = document.createElement("div");
         // card.classList.add("card");
         card.innerHTML = `<div class="col">
@@ -188,7 +192,8 @@ function displayCards(filteredProducts) {
 // Add event listeners to lists
 lists.forEach(listcategory => {
     listcategory.addEventListener("click", function () {
-        const category = this.getAttribute("data-category");
+        const category =this.getAttribute('data-category');
+        console.log("clicked category"+category);
         const filteredProducts = category === "all"
             ? cardData
             : cardData.filter(product => product.category === category);
