@@ -6,11 +6,11 @@ let cardData = [
         imgFile3: 'images/products/Majestic Stag in the Wild 3.JPG',
         imgFile4: 'images/products/Majestic Stag in the Wild 4.JPG',
         imgFile5: 'images/products/Majestic Stag in the Wild 5.JPG',
-        heading: "Original Deer Oil Painting 'Majestic Stag In The Wild'| 30X25 on Canvas board",
+        heading: "'Majestic Stag In The Wild' Original Oil Painting | 30X25 on Canvas board",
         body: "Capture the untamed beauty of nature with this striking hand-painted depiction of a stag standing proudly amidst lush greenery. The vibrant green background and bold brushstrokes bring a sense of vitality and movement to the piece, while the stag's majestic antlers command attention. Perfect for nature enthusiasts or anyone looking to add a touch of wilderness to their space, this original artwork conveys a serene and powerful connection to the outdoors. Signed by the artist, this one-of-a-kind painting makes an excellent addition to your art collection or a thoughtful gift for animal lovers.",
         price: 70,
         category: 'animals',
-        url:''
+        url:'https://buy.stripe.com/aEUdQSdCN07l49i6op'
 
 
     },
@@ -24,7 +24,8 @@ let cardData = [
         heading: '"The Spring Brook" Original Oil Painting | 20x20cm On Canvas',
         body: 'Bring the beauty of nature indoors with this stunning original painting of a serene river landscape. Capturing a tranquil stream winding through lush greenery, this piece showcases vibrant shades of green, yellow, and blue in a lively impressionistic style. Textured brushstrokes create a sense of movement in the water and depth in the foliage, evoking the peaceful ambiance of a walk by the riverside.',
         price: 50,
-        category: 'landscapes'
+        category: 'landscapes',
+        url:'https://buy.stripe.com/4gwaEG2Y907laxGfZ0'
 
     },
     {
@@ -51,7 +52,8 @@ let cardData = [
         heading:"'Traditional boat in Koule's port Original Oil Painting| 20x20cm On Canvas board",
         body: "This captivating acrylic painting depicts a classic Greek fishing boat gently gliding on the shimmering turquoise waters, set against the backdrop of a historic harbor wall. The intricate details of the aged stone fortress, paired with the vibrant blues of the boat and sea, evoke the charm of Mediterranean coastal life.The lively brushstrokes capture the motion of the water and the timeless beauty of the scene, making it a perfect piece for lovers of nautical themes and travel-inspired art. Hand-painted on durable canvas, this artwork is an original creation, signed by the artist, and ready to enhance any space with its sunny, maritime ambiance.",
         price: 60,
-        category: 'boats'
+        category: 'boats',
+        url:'https://buy.stripe.com/5kAeUWeGR2ft21afZ1'
 
     },
     {
@@ -64,8 +66,51 @@ let cardData = [
         heading:"'Tranquil Waters: Anchored by the Shore'| 30x20cm On Canvas board",
         body: "Escape to a serene coastal getaway with this vibrant hand-painted artwork. Featuring a small boat gently anchored in calm turquoise waters, the painting evokes a sense of peace and simplicity. The background showcases a lush shoreline under a clear blue sky, completing the idyllic scene. This piece is perfect for enhancing any space with its calming and summery vibe. Signed by the artist, it’s an original work that brings the beauty of the seaside into your home.",
         price: 55,
-        category: 'boats'
+        category: 'boats',
+        url:'https://buy.stripe.com/4gwdQSeGRdYb7lu9AE'
     },
+    {
+        id: 6,
+        imgFile1: 'images/products/Floral Symphony 1.jpg',
+        imgFile2: 'images/products/Floral Symphony 2.jpg',
+        imgFile3: 'images/products/Floral Symphony 3.JPG',
+        imgFile4: 'images/products/Floral Symphony 4.JPG',
+        imgFile5: 'images/products/Floral Symphony 5.JPG',
+        heading:"'Floral Symphony' Original Acrylic Painting| 20x20cm on CANVAS ",
+        body: "Hand-painted floral canvas art featuring vibrant roses, daisies, and berry clusters against a neutral textured background. This one-of-a-kind artwork combines bold reds, soft pinks, and delicate purples to create a striking yet elegant design, perfect for adding a touch of nature-inspired charm to your living room, bedroom, or office. The textured brushstrokes bring depth and personality, making it a unique piece for art enthusiasts. Ideal as a gift for special occasions or as a centerpiece for your home decor",
+        price: 50,
+        category: 'florals',
+        url:'https://buy.stripe.com/aEU5km8it5rFgW4eUZ'
+    },
+    {
+        id: 7,
+        imgFile1: 'images/products/Eternal Wave 1.jpg',
+        imgFile2: 'images/products/Eternal Wave 2.JPG',
+        imgFile3: 'images/products/Eternal Wave 3.JPG',
+        imgFile4: 'images/products/Eternal Wave 4.JPG',
+        imgFile5: 'images/products/Eternal Wave 5.JPG',
+        heading:"'Eternal Wave'  Original Acrylic Painting |20x20cm on CANVAS  ",
+        body: "Capture the raw power and beauty of the ocean with this striking painting of a crashing wave. This hand-painted acrylic artwork showcases vibrant shades of blue and white, evoking the energy and motion of the sea. The textured strokes bring the wave to life, making it feel as if it's about to break free from the canvas. Perfect for coastal decor lovers or anyone drawn to the sea’s powerful allure, this piece brings a refreshing and energizing atmosphere to any room.",
+        price: 50,
+        category: 'seascapes',
+        url:'https://buy.stripe.com/aEU146gOZ2ft5dm3ci'
+    },
+    {
+        id: 8,
+        imgFile1: 'images/products/Sea Energy 1.jpg',
+        imgFile2: 'images/products/Sea Energy 2.JPG',
+        imgFile3: 'images/products/Sea Energy 3.JPG',
+        imgFile4: 'images/products/Sea Energy 4.JPG',
+        imgFile5: 'images/products/Sea Energy 5.JPG',
+        heading:" 'Sea Energy' Original Acrylic Painting | 20x20cm on CANVAS ",
+        body: "Bring the beauty and power of the ocean into your home with this stunning hand-painted acrylic artwork. Featuring vibrant shades of blue and white, this canvas captures the dynamic motion of a crashing wave against a serene horizon. Perfect for ocean lovers, this piece will add a touch of tranquility and energy to any room. The compact size makes it ideal for small spaces or as a part of a gallery wall. Ready to hang and a beautiful gift for any occasion!",
+        price: 50,
+        category: 'seascapes',
+        url:'https://buy.stripe.com/6oE7sueGRbQ3dJS3cj'
+    }
+
+
+
 
 ];
 
