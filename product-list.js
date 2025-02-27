@@ -58,11 +58,11 @@ const createCard = (cardData) => {
 
 // Fetch JSON data and call the function to generate products on page load
 fetch('./products.json')
-  .then(response => response.json())
-  .then(cardData => {
-    createCard(cardData);
-  })
-  .catch(error => console.error('Error loading JSON:', error));
+    .then(response => response.json())
+    .then(cardData => {
+        createCard(cardData);
+    })
+    .catch(error => console.error('Error loading JSON:', error));
 
 
 // -----------display products when click the category--------------------------------------------------
@@ -83,8 +83,8 @@ function displayCards(filteredProducts) {
         return;
     }
 
-    
-     console.log("products for the selected category"+products);
+
+    console.log("products for the selected category" + products);
 
     filteredProducts.forEach(item => {
         const card = document.createElement("div");
@@ -112,18 +112,29 @@ function displayCards(filteredProducts) {
     });
 }
 
+let cardData = [];
 
-// Add event listeners to lists
-lists.forEach(listcategory => {
-    listcategory.addEventListener("click", function () {
-        const category =this.getAttribute('data-category');
-        console.log("clicked category"+category);
-        const filteredProducts = category === "all"
-            ? cardData
-            : cardData.filter(product => product.category === category);
-        displayCards(filteredProducts);
-    });
-});
+// Fetch data from an external JSON file
+fetch('./products.json')
+    .then(response => response.json())
+    .then(data => {
+        cardData = data; // Assign fetched JSON data to cardData
+
+
+        // Add event listeners to lists
+        lists.forEach(listcategory => {
+            listcategory.addEventListener("click", function () {
+                const category = this.getAttribute('data-category');
+                console.log("clicked category" + category);
+                const filteredProducts = category === "all"
+                    ? cardData
+                    : cardData.filter(product => product.category === category);
+                displayCards(filteredProducts);
+            });
+        });
+
+    })
+    .catch(error => console.error('Error loading JSON data:', error));
 
 
 // --------------display products when search product ------------------------///
