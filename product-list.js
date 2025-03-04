@@ -1,4 +1,28 @@
+//format json product
+/*
+{
+    "id":,
+    "imgFile1": "",
+    "imgFile2": "",
+    "imgFile3": "",
+    "imgFile4": "",
+    "imgFile5": "",
+    "heading": " ",
+    "body":"",
+    "features": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
 
+      ],
+    "price": ,
+    "category":"",
+    "url":""
+}
+    */
 const createCard = (cardData) => {
 
 

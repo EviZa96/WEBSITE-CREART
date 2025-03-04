@@ -124,10 +124,37 @@
         "price": 50,
         "category":"florals",
         "url":""
+    },
+    {
+        "id":10,
+        "imgFile1": "images/products/Hydrangea Bloom 1.JPG",
+        "imgFile2": "images/products/Hydrangea Bloom 2.JPG",
+        "imgFile3": "images/products/Hydrangea Bloom 3.jpg",
+        "imgFile4": "images/products/Hydrangea Bloom 4.JPG",
+        "imgFile5": "images/products/Hydrangea Bloom 5.JPG",
+        "heading": " 'Hydrangea Bloom' Original Acrylic Painting |20x20cm on CANVAS  ",
+        "body":"Celebrate the delicate beauty of nature with this impressionist-style acrylic painting of hydrangea blooms. Soft pastel hues of blue, lavender, and white blend seamlessly to create a serene and dreamy composition. The textured brushstrokes bring life to the floral details, making it a captivating centerpiece for any room. Perfect for adding a touch of elegance to your living space or as a thoughtful gift for flower and art enthusiasts. Ready to display and handcrafted with care.",
+        "features": [
+            "Original hand-painted floral",
+            "Vibrant, textured brushstrokes for added depth ",
+            "Impressionistic style that complements various decor themes",
+            "Signed by the artist for authenticity",
+            "Category of Colour was used:Acrylic",
+            "Panel painting:canvas",
+            "The product will be delivered unframed"
+
+          ],
+        "price": 50,
+        "category":"florals",
+        "url":""
     }
 
 
 
 
 
+
 ]
+
+
+
