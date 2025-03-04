@@ -275,10 +275,39 @@ body {
 
 #studio-stories img {
     height: 300px;
-    width: 80px;
+    width: 40rem;
 
 }
-
+/* --------- welcome to my art studio css-add responsiveness */
+.container-welcome {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  
+  .container-welcome .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 16px; /* Add space between columns */
+  }
+  
+  .text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .image-column img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .container-welcome .row  {
+      grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+    }
+  }
+  
 #socialmedia img {
     width: 250px;
     height: 270px;
