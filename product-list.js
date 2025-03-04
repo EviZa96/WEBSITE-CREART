@@ -89,7 +89,8 @@ function displayCards(filteredProducts) {
     filteredProducts.forEach(item => {
         const card = document.createElement("div");
         // card.classList.add("card");
-        card.innerHTML = `<div class="col">
+        card.innerHTML = `
+                        <div class="col">
                         <div class="card">
                             <img class="card-img-top img-fit " style="height:30rem;" id="productImg" src="${item.imgFile1}" alt="Card image cap" onmouseover="this.src='${item.imgFile2}'" onmouseout="this.src='${item.imgFile1}';">
                                 <div class="card-body>
@@ -98,7 +99,7 @@ function displayCards(filteredProducts) {
                                         
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="product-price fw-bold">${item.price} € </span>
-                                            <button class="view-details-btn text-white px-4 py-2 rounded-pill" data-product-id="${item.id}"">View Details</button>
+                                            <button class="view-details-btn text-white px-4 py-2 rounded-pill" data-product-id="${item.id}">View Details</button>
                                         </div>
                                    
                             
@@ -106,6 +107,7 @@ function displayCards(filteredProducts) {
                                 </div>
                                 </div>
                                 </div>
+                                
                 </div>`;
 
         cardContainer.appendChild(card);
