@@ -97,7 +97,7 @@ function displayCards(filteredProducts) {
                                         <h5 class="card-title mb-3 fw-bold  ">${item.heading}</h5>
                                         
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="product-price fw-bold">$${item.price}</span>
+                                            <span class="product-price fw-bold">${item.price} € </span>
                                             <button class="view-details-btn text-white px-4 py-2 rounded-pill" data-product-id="${item.id}"">View Details</button>
                                         </div>
                                    
