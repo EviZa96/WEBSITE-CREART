@@ -112,6 +112,13 @@ function displayCards(filteredProducts) {
 
         cardContainer.appendChild(card);
     });
+
+    document.querySelectorAll('.view-details-btn').forEach((button) => { // Here i used View Details button class instead of card class
+        button.addEventListener('click', function () {
+            let productId = this.getAttribute('data-product-id');
+            window.location.href = `ProductDetails1.html?id=${productId}`;
+        });
+    });
 }
 
 let cardData = [];
