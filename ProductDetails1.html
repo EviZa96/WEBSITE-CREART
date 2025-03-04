@@ -41,7 +41,7 @@
 
     <!-- col-sm-8 d-flex flex-column d-inline-flex p-2 bd-highlight justify-content-around  -->
 
-    <div class="container " >
+    <div class="container ">
         <div class="detail" style="margin-top: 10rem;">
             <div class="row ">
                 <div class="col-sm">
@@ -78,7 +78,9 @@
                         <h1 class="name"></h1>
                         <p class="price"></p>
                         <p class="description"></p>
-                        <button class="btn-addtocart" >Add to Cart</button>
+                        <H3>This  painting offers the following characteristics:</H3>
+                        <p class="features"></p>
+                        <button class="btn-addtocart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -100,6 +102,7 @@
         //find this product
         function showDetail() {
             let detail = document.querySelector('.detail');
+            let featur = document.querySelector('.features');
             let productId = new URLSearchParams(window.location.search).get('id');
 
             console.log("product id  " + productId);
@@ -121,10 +124,19 @@
             detail.querySelector('.image4 img').src = thisProduct.imgFile4;
             detail.querySelector('.image5 img').src = thisProduct.imgFile5;
             detail.querySelector('.name').innerText = thisProduct.heading;
-            detail.querySelector('.price').innerText = thisProduct.price + '€' ;
+            detail.querySelector('.price').innerText = thisProduct.price + '€';
             detail.querySelector('.description').innerText = thisProduct.body;
+            
+            // 
+            const featureList = document.createElement("ul");
+            thisProduct.features.forEach(feature => {
+                const listItem = document.createElement("li");
+                listItem.textContent = feature;
+                featureList.appendChild(listItem);
+            });
+            featur.appendChild(featureList);
 
-             // Add click event to the button
+            // Add click event to the button
             let buttonaddtocart = detail.querySelector('.btn-addtocart');
             buttonaddtocart.addEventListener('click', () => {
                 window.location.href = thisProduct.url; // Redirect to the product URL

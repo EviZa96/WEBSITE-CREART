@@ -102,7 +102,30 @@
         "price": 50,
         "category":"seascapes",
         "url":"https://buy.stripe.com/6oE7sueGRbQ3dJS3cj"
+    },
+    {
+        "id":9,
+        "imgFile1": "images/products/Mysterious Mosaic Rose 1.jpg",
+        "imgFile2": "images/products/Mysterious Mosaic Rose 2.JPG",
+        "imgFile3": "images/products/Mysterious Mosaic Rose 3.JPG",
+        "imgFile4": "images/products/Mysterious Mosaic Rose 4.JPG",
+        "imgFile5": "images/products/Mysterious Mosaic Rose 5.JPG",
+        "heading": " 'Mysterious Mosaic Rose' Original Acrylic Painting | 20x20cm on canvas ",
+        "body":"Add a touch of elegance to your space with this unique, hand-painted abstract floral artwork.The expressive brushstrokes and soft, swirling background in neutral tones create a sense of depth and movement, making it a perfect statement piece for any room.This painting’s bold color palette and textured brushwork bring a lively yet calming feel to any interior. Ideal for art lovers seeking an original piece that reflects both beauty and contemporary style. Each painting is crafted with care, making it a unique addition to your art collection.",
+        "features": [
+            "Original hand-painted floral",
+            "Vibrant, textured brushstrokes for added depth ",
+            "Impressionistic style that complements various decor themes",
+            "Signed by the artist for authenticity",
+            "Category of Colour was used:Acrylic",
+            "Panel painting:canvas"
+
+          ],
+        "price": 50,
+        "category":"florals",
+        "url":""
     }
+
 
 
 
