@@ -147,7 +147,52 @@
         "price": 50,
         "category":"florals",
         "url":""
+    },
+    {
+        "id":11,
+        "imgFile1": "images/products/Blooming Bliss 1.JPG",
+        "imgFile2": "images/products/Blooming Bliss 2.JPG",
+        "imgFile3": "images/products/Blooming Bliss 3.JPG",
+        "imgFile4": "images/products/Blooming Bliss 4.JPG",
+        "imgFile5": "images/products/Blooming Bliss 5.jpg",
+        "heading": " 'Blooming Bliss'  Original Acrylic Painting | 20x20cm on canvas ",
+        "body":"Add a burst of color and life to your home with this vibrant floral painting! This hand-painted canvas captures a lively garden in full bloom, featuring a harmonious array of pinks, reds, purples, and greens that evoke the refreshing beauty of nature. Each flower is uniquely detailed, creating depth and texture that brings the garden to life. Ideal for brightening up any room, this artwork is a celebration of nature's diversity and a perfect gift for flower enthusiasts or art lovers.",
+        "features": [
+            "Original hand-painted floral",
+            "Vibrant, textured brushstrokes for added depth ",
+            "Impressionistic style that complements various decor themes",
+            "Signed by the artist for authenticity",
+            "Category of Colour was used:Acrylic",
+            "Panel painting:canvas",
+            "The product will be delivered unframed"
+          ],
+        "price": 50,
+        "category":"florals",
+        "url":""
+    },
+    {
+        "id":12,
+        "imgFile1": "images/products/Wisteria Dream 1.JPG",
+        "imgFile2": "images/products/Wisteria Dream 2.JPG",
+        "imgFile3": "images/products/Wisteria Dream 3.JPG",
+        "imgFile4": "images/products/Wisteria Dream 4.JPG",
+        "imgFile5": "images/products/Wisteria Dream 5.JPG",
+        "heading": " 'Wisteria Dream' Original Acrylic Painting |20x20cm on CANVAS ",
+        "body":"Immerse yourself in a gentle cascade of color with Wisteria Dream, a hand-painted abstract impression of wisteria flowers in bloom. This acrylic painting captures the soft, romantic palette of pinks, purples, and greens, evoking the tranquility of a blooming garden on a warm spring day. Each brushstroke creates a sense of depth and movement, as if the blossoms are gracefully swaying in the breeze. Perfect for adding a touch of nature-inspired elegance to any space, this one-of-a-kind artwork brings a blend of modern abstraction and natural beauty into your home.",
+        "features": [
+            "Original hand-painted floral",
+            "Vibrant, textured brushstrokes for added depth ",
+            "Impressionistic style that complements various decor themes",
+            "Signed by the artist for authenticity",
+            "Category of Colour was used:Acrylic",
+            "Panel painting:canvas",
+            "The product will be delivered unframed"
+          ],
+        "price":50 ,
+        "category":"florals",
+        "url":""
     }
+   
 
 
 
