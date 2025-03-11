@@ -236,6 +236,28 @@
         "price":50 ,
         "category":"florals",
         "url":""
+    },
+    {
+        "id":15,
+        "imgFile1": "images/products/Blooming Elegance 1.JPG",
+        "imgFile2": "images/products/Blooming Elegance 2.JPG",
+        "imgFile3": "images/products/Blooming Elegance 3.JPG",
+        "imgFile4": "images/products/Blooming Elegance 4.JPG",
+        "imgFile5": "",
+        "heading": " 'Blooming Elegance' Original Oil Painting |21x30cm on canvas board ",
+        "body":"Add a touch of grace to your home with this stunning hand-painted canvas featuring a soft pink rose set against a lush green backdrop. Perfectly capturing the beauty and charm of nature, this original artwork is a delightful blend of vibrant hues and delicate brushstrokes. Ideal as a gift or a decorative piece for any room, it comes beautifully paired with a fresh bouquet of chrysanthemums for a harmonious and elegant display.",
+        "features": [
+           " Original hand-painted floral",
+            "Vibrant, textured brushstrokes for added depth ",
+            "Realistic style that complements various decor themes",
+            "Signed by the artist for authenticity",
+            "Category of Colour was used:oil",
+            "Panel painting:canvas board",
+            "The product will be delivered unframed"
+          ],
+        "price": 70,
+        "category":"florals",
+        "url":""
     }
 
    
