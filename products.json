@@ -192,6 +192,52 @@
         "price":50 ,
         "category":"florals",
         "url":""
+    },
+    {
+        "id":13,
+        "imgFile1": "images/products/Harbor Serenity 1.jpg",
+        "imgFile2": "images/products/Harbor Serenity 2.jpg",
+        "imgFile3": "images/products/Harbor Serenity 3.jpg",
+        "imgFile4": "images/products/Harbor Serenity 4.jpg",
+        "imgFile5": "",
+        "heading": " 'Harbor Serenity' Original Oil Painting |24x30cm on CANVAS BOARD ",
+        "body":"Immerse yourself in the tranquil beauty of a serene harbor with this charming hand-painted artwork. Depicting a classic fishing boat moored near the dock, the piece captures the essence of coastal life with a warm and impressionistic palette. The textured brushstrokes convey a sense of movement in the water and the glow of light reflecting off the surface. Perfect for lovers of nautical themes or anyone looking to bring a touch of seaside nostalgia into their space. Signed by the artist, this unique painting is ready to enrich any home or office décor",
+        "features": [
+            "Original hand-painted boats",
+            "Vibrant, textured brushstrokes for added depth ",
+            "Impressionistic style that complements various decor themes",
+            "Signed by the artist for authenticity",
+            "Category of Colour was used:oil",
+            "Panel painting:canvas board",
+            "The product will be delivered unframed"
+    
+          ],
+        "price":70 ,
+        "category":"boats",
+        "url":""
+    },
+    {
+        "id":14,
+        "imgFile1": "images/products/Spring Awakening 1.jpg",
+        "imgFile2": "images/products/Spring Awakening 2.jpg",
+        "imgFile3": "images/products/Spring Awakening 3.jpg",
+        "imgFile4": "images/products/Spring Awakening 4.jpg",
+        "imgFile5": "images/products/Spring Awakening 5.jpg",
+        "heading": "  'Spring Awakening 'Original Acrylic Painting |20x20cm on CANVAS  ",
+        "body":"Step into a lush garden with, a lively and colorful acrylic painting that celebrates the beauty of blooming flowers. This artwork captures the essence of a floral bouquet, with radiant shades of pinks, reds, purples, and greens layered in expressive brushstrokes that bring each bloom to life. The vivid colors and textured brushwork create a sense of depth, inviting viewers to feel as if they’re surrounded by flowers. Ideal for brightening up any space, this unique piece of art will add a touch of natural elegance and warmth to your home.",
+        "features": [
+            "Original hand-painted floral",
+            "Vibrant, textured brushstrokes for added depth ",
+            "Impressionistic style that complements various decor themes",
+            "Signed by the artist for authenticity",
+            "Category of Colour was used:acrylic",
+            "Panel painting:canvas",
+            "The product will be delivered unframed"
+    
+          ],
+        "price":50 ,
+        "category":"florals",
+        "url":""
     }
    
 
