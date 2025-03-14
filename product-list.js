@@ -47,7 +47,7 @@ const createCard = (cardData) => {
                                         
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="product-price fw-bold">${data.price} €</span>
-                                            <button class="view-details-btn text-white px-4 py-2 rounded-pill" data-product-id="${data.id}"">View Details</button>
+                                            <button class="view-details-btn text-white px-4 py-2 rounded-pill" data-product-id="${data.id}">View Details</button>
                                         </div>
                                    
                             
@@ -123,7 +123,7 @@ function displayCards(filteredProducts) {
                                         
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="product-price fw-bold">${item.price} € </span>
-                                            <button class="view-details-btn text-white px-4 py-2 rounded-pill" data-product-id="${item.id}">View Details</button>
+                                            <button class="view-details-btn text-white px-4 py-2 rounded-pill" data-product-id="${item.id}" onclick="viewDetails('${item.id}', '${item.heading}', ${item.price})">View Details</button>
                                         </div>
                                    
                             
@@ -141,10 +141,17 @@ function displayCards(filteredProducts) {
         button.addEventListener('click', function () {
             let productId = this.getAttribute('data-product-id');
             window.location.href = `ProductDetails1.html?id=${productId}`;
+            
         });
     });
 }
-
+//////////////////
+function viewDetails(id, heading, price) {
+    const productDetails = { id, heading, price };
+    localStorage.setItem('selectedProduct', JSON.stringify(productDetails));
+    // window.location.href = 'ProductDetails1.html';
+  }
+////////////////////
 let cardData = [];
 
 // Fetch data from an external JSON file
