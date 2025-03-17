@@ -74,13 +74,14 @@
 
 
                 <div class="col-sm">
-                    <div class="content">
-                        <h1 class="name"></h1>
-                        <p class="price"></p>
+                    <div class="content" id>
+                        <h1 class="name" data-name></h1>
+                        <p class="price" data-price></p>
                         <p class="description"></p>
                         <H3>This painting offers the following characteristics:</H3>
                         <p class="features"></p>
-                        <button class="btn-addtocart">Add to Cart</button>
+                        <button class="btn-addtocart" data-id="">Add to Cart</button>
+                        <button class="btn-Backtoshop"  onclick="location.href='shoplist.html'">Continue Shopping</button>
                     </div>
                 </div>
             </div>
@@ -149,6 +150,7 @@
 
             /////////////////////////////////////////////////////////////////////////////////
             // Retrieve product details from localStorage
+            /*
             const productDetails = JSON.parse(localStorage.getItem('selectedProduct'));
 
             document.querySelector('.name').textContent = productDetails.heading;
@@ -175,11 +177,38 @@
                 localStorage.setItem('eshopCart', JSON.stringify(cart));
                 alert(`${name} added to cart!`);
             }
+                */
+
+            // Function to handle Add to Cart
+
+
 
         }
         //////////////////////////////////////////////////
 
 
+        document.querySelector('.btn-addtocart').addEventListener('click', function () {
+
+            const productId = this.getAttribute('data-id');
+            const productTitle = document.querySelector('.name').textContent;
+            const productPrice = parseFloat(document.querySelector('.price').textContent.replace('€', ''));
+
+            // Fetch existing cart or initialize a new one
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Check if product is already in the cart
+            const existingProduct = cart.find(item => item.id === productId);
+            if (existingProduct) {
+                existingProduct.quantity += 1; // Increment quantity if already in cart
+            } else {
+                // Add new product to cart
+                cart.push({ id: productId, title: productTitle, price: productPrice, quantity: 1 });
+            }
+
+            // Save cart to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Product added to cart!');
+        });
 
 
     </script>
