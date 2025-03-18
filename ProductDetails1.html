@@ -81,7 +81,8 @@
                         <H3>This painting offers the following characteristics:</H3>
                         <p class="features"></p>
                         <button class="btn-addtocart" data-id="">Add to Cart</button>
-                        <button class="btn-Backtoshop"  onclick="location.href='shoplist.html'">Continue Shopping</button>
+                        <button class="btn-Backtoshop" onclick="location.href='shoplist.html'">Continue
+                            Shopping</button>
                     </div>
                 </div>
             </div>
@@ -187,28 +188,46 @@
         //////////////////////////////////////////////////
 
 
-        document.querySelector('.btn-addtocart').addEventListener('click', function () {
+        // update cart count
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartCount = document.getElementById('cart-count');
 
-            const productId = this.getAttribute('data-id');
-            const productTitle = document.querySelector('.name').textContent;
-            const productPrice = parseFloat(document.querySelector('.price').textContent.replace('€', ''));
-
-            // Fetch existing cart or initialize a new one
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-            // Check if product is already in the cart
-            const existingProduct = cart.find(item => item.id === productId);
-            if (existingProduct) {
-                existingProduct.quantity += 1; // Increment quantity if already in cart
-            } else {
-                // Add new product to cart
-                cart.push({ id: productId, title: productTitle, price: productPrice, quantity: 1 });
+            // Function to calculate total items in the cart
+            function updateCartCount() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+                cartCount.textContent = totalItems; // Update cart count in the menu
             }
 
-            // Save cart to localStorage
-            localStorage.setItem('cart', JSON.stringify(cart));
-            alert('Product added to cart!');
+            // Optional: Listen for cart changes (if dynamically updated)
+            window.addEventListener('storage', updateCartCount);
         });
+
+
+        //// Event listener for "Add to Cart" button
+        document.querySelectorAll('.btn-addtocart').forEach(button => {
+            button.addEventListener('click', function () {
+                const productId = this.getAttribute('data-id');
+                const productTitle = this.getAttribute('data-name');
+                const productPrice = parseFloat(this.getAttribute('data-price'));
+
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                // Check if product is already in the cart
+                const existingProduct = cart.find(item => item.id === productId);
+                if (existingProduct) {
+                    existingProduct.quantity += 1;
+                } else {
+                    cart.push({ id: productId, title: productTitle, price: productPrice, quantity: 1 });
+                }
+
+                localStorage.setItem('cart', JSON.stringify(cart)); // Save updated cart to localStorage
+                updateCartCount(); // Update cart count dynamically
+                alert(`${productTitle} added to cart!`);
+            });
+        });
+
+
 
 
     </script>
