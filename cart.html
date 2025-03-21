@@ -12,7 +12,8 @@
 
     <div id="cart-items"></div>
     <p id="total-amount"></p>
-    <a href="checkout.html">Proceed to Checkout</a>
+    <!-- <a href="checkout.html">Proceed to Checkout</a> -->
+    <button id="checkout-button">Checkout</button>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -43,9 +44,32 @@
                     window.location.reload(); // Refresh the page
                 });
             });
+
+
+            // Handle Checkout
+            document.getElementById('checkout-button').addEventListener('click', function () {
+                fetch('/create-checkout-session', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(cart),
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.url) {
+                            window.location.href = data.url; // Redirect to Stripe Checkout
+                        } else {
+                            alert('Something went wrong!');
+                        }
+                    })
+                    .catch(error => console.error('Error:', error));
+            });
+
+
         });
 
-        
+
 
 
 
