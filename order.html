@@ -9,11 +9,25 @@
 
 <body>
 
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+
+
+    <!--start ενοτητα για custom order -->
     <section style="display:flex; flex-wrap:wrap; align-items:center; padding:60px 20px; background:#f7f7f7;">
 
         <!-- Εικόνα -->
         <div style="flex:1 1 300px; text-align:center; padding:10px;">
-            <img src="images/marketingcustomorder.jpg" alt="Custom Gifts" style="max-width:100%; height:auto; border-radius:12px;">
+            <img src="images/marketingcustomorder.jpg" alt="Custom Gifts"
+                style="max-width:100%; height:auto; border-radius:12px;">
         </div>
 
         <!-- Κείμενο -->
@@ -31,6 +45,7 @@
         </div>
 
     </section>
+    <!-- end section custom order -->
 
 
 
@@ -52,5 +67,17 @@
 
 
 </body>
+
+
+<!--footer -->
+<div id="footer-placeholder">
+
+</div>
+
+<script>
+  $(function () {
+    $("#footer-placeholder").load("footer.html");
+  });
+</script>
 
 </html>
