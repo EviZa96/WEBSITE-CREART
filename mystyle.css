@@ -24,7 +24,8 @@ body {
 li .customportrait{
     background-color: #269674;
     color: white;
-    border-radius: 10px solid black;
+    border: 10px solid black;
+    border-radius: 50px 20px;
     
 }
 
