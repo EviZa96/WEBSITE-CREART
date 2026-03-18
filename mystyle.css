@@ -21,7 +21,7 @@ body {
 
 }
 
-#customportrait{
+li .customportrait{
     background-color: #0a575a;
     color: white;
     border-radius: 2px;
