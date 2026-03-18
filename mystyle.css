@@ -24,8 +24,8 @@ body {
 .customportrait{
     background-color: #269674;
     color: white;
-    border-radius: 10px;
-    border-color: black;
+    border-radius: 10px solid black;
+    
 }
 
 /* 
