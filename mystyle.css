@@ -21,6 +21,12 @@ body {
 
 }
 
+#customportrait{
+    background-color: #0a575a;
+    color: white;
+    border-radius: 2px;
+}
+
 /* 
 .navbar .navbar-brand {
     padding-top: 8px;
