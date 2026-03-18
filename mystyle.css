@@ -21,7 +21,7 @@ body {
 
 }
 
-#customportrait{
+.customportrait{
     background-color: #269674;
     color: white;
     border: 10px solid black;
