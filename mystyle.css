@@ -162,8 +162,6 @@ body {
     overflow: hidden;
     /* Prevents content from overflowing */
 
-
-
 }
 
 .bkgd-image {
@@ -327,6 +325,18 @@ body {
 #galleryportfolio {
     margin-top: 100px;
 
+}
+
+.canva-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.canva-container iframe {
+  max-width: 80%;
+  height: auto;
 }
 
 /*------------------- services section css---------------------- */
