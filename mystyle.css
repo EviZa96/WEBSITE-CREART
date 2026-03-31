@@ -21,13 +21,16 @@ body {
 
 }
 
+/* start order.html  */
 .customportrait{
     background-color: #269674;
     color: white;
-    border: 10px solid black;
+    border: 5px solid black;
     border-radius: 50px 20px;
     
 }
+
+/* end of order.html */
 
 /* 
 .navbar .navbar-brand {
@@ -534,7 +537,30 @@ body {
 
 /* ----------------------------end of meettheartist.html------------------------------------ */
 
+/* start style for Evita's art studio */
 
+.image-cardbubbleus{
+  width: 800px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.image-cardbubbleus img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #555;
+}
+
+
+/* end of style of evita's art studio */
 
 .footer-logo {
     width: 50px;
