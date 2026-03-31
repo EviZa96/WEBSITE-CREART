@@ -40,10 +40,20 @@ body {
 
 /* ---------------------------style for nav.html----------------------- */
 
-.navbar .navbar-brand img {
+ #logo {
+  max-height: 90px;
+}
+
+@media (max-width: 576px) {
+  #logo {
+    max-height: 50px;
+  }
+}
+
+/* .navbar .navbar-brand img {
     height: 40px;
     width: 40px;
-}
+} */
 
 .dropdown-item:hover {
     background-color: #b9b2b2;
@@ -520,6 +530,7 @@ body {
     width: 95%;
     height: 60%;
     display: block;
+    padding: 20px;
 
 
 
@@ -541,26 +552,26 @@ body {
 
 /* ----------------------------end of meettheartist.html------------------------------------ */
 
-/* start style for Evita's art studio */
+/* -------------------start style for Evita's art studio --------------------*/
 
 .image-cardbubbleus{
-  width: 800px;
-  text-align: center;
-  border: 1px solid #ddd;
+  /* width: 800px; */
+  /* text-align: center; */
+  border: 4px solid #1acbe2;
   padding: 10px;
   border-radius: 8px;
 }
 
 .image-cardbubbleus img {
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
   display: block;
 }
 
 .caption {
   margin-top: 8px;
-  font-size: 18px;
-  color: #555;
+  font-size: 24px;
+  color: #050505;
 }
 
 
