@@ -355,33 +355,6 @@ body {
 
 
 
-
-/*------------------- services section css---------------------- */
-/* .servicesText.card {
-    height: 280px;
-    cursor: pointer;
-}
-
-.servicesIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
-}
-
-.card-title {
-    text-align: center;
-}
-
-.card:hover .servicesIcon {
-    color: #008000;
-}
-
-.servicesText:hover {
-    border: 1px solid #008000;
-} */
-
-/* @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500); */
-
 /* ---------------------- style for contact.html-------------------------- */
 .contact3 {
     font-family: "Montserrat", sans-serif;
@@ -769,7 +742,7 @@ ul .navbar-nav {
 
 
 
-/*-----------------------shop style.css------------------ProductDetails1.html----------------------------- */
+/*-----------------------shop style.css----ProductDetails1.html----------------------------- */
 .heading-top-op {
     background-color: rgb(248, 241, 179);
     width: 100%;
@@ -799,7 +772,7 @@ ul .navbar-nav {
     color: white;
 }
 
-/*----------------------------------------------------- shoplist.html  => product-list.js---------------------------------------- */
+/*------------ shoplist.html  => product-list.js---------------------------------------- */
 .view-details-btn {
     background-color: #0fbdae;
     border: 3px solid rgba(5, 71, 60, 0.781);
@@ -853,4 +826,10 @@ header {
 .carouselstudio-img {
     height: 600px;
     object-fit: cover;
+}
+
+/* ----------------------order.html--------------------------- */
+a .custom-btnform:hover{
+    background-color: rgb(16, 168, 148);
+    color: white;
 }
